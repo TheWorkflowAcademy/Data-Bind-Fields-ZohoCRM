@@ -5,7 +5,7 @@ A Deluge script that data binds two of the same fields in two separate modules -
 This is useful when you have a similar field in two separate modules. For example, you have a field called "Company Overview" in the **Accounts** module and also in **Deals** for ease of reference (or whatever other reason it may be). Because they are both similar fields, you would want the information to be accessible and constantly up to date in both modules. This script enables you to edit the field in either module and have the changes reflected in both modules.
 
 ## Configuration
-For this function to work both ways, you will need to set up 2 custom functions and workflow rules (one for each module).
+For this function to work both ways, you will need to set up two custom functions and workflow rules (one for each module).
 * **Worfklow Rule 1**
   * Triggers function when an **Account** is created/ edited with the custom function associated below.
   * Custom Function 1: When the "Company Overview" field in an **Account** is updated, the similar field in all related **Deals** gets the updated with the same value.
