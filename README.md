@@ -7,10 +7,10 @@ This is useful when you have a similar field in two separate modules. For exampl
 ## Configuration
 For this function to work both ways, you will need to set up two custom functions and workflow rules (one for each module).
 * **Worfklow Rule 1**
-  * Triggers function when an **Account** is created/ edited with the custom function associated below.
+  * Triggers the custom function below when an **Account** is created/ edited.
   * Custom Function 1: When the "Company Overview" field in an **Account** is updated, the similar field in all related **Deals** gets the updated with the same value.
 * **Workflow Rule 2**
-  * Triggers function when an **Deal** is created/ edited with the custom function associated below.
+  * Triggers the custom function below when a **Deal** is created/ edited.
   * Custom Function 2: When the "Company Overview" field on a **Deal** is updated, the similar field in the **Account** gets updated, along with all other **Deals** related to the same **Account**.
 
 ## Tutorial
