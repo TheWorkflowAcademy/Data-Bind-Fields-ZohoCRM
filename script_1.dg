@@ -1,0 +1,16 @@
+account = zoho.crm.getRecordById("Accounts",accountid);
+//Get Company Overview Value
+company_overview = account.get("Company_Overview");
+//Get the related Deal IDs
+deal = zoho.crm.getRelatedRecords("Deals","Accounts",accountid);
+dealids = List();
+for each  d in deal
+{
+	dealids.add(d.get("id"));
+}
+//Update Company Overview Value in the similar field in all related Deals
+for each  id in dealids
+{
+	update = zoho.crm.updateRecord("Deals",id,{"Company_Overview":company_overview});
+	info update;
+}
